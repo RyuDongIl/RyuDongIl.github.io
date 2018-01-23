@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign _crawling = site.crawling | sort: 'date' | reverse -%}
+{%- assign _crawling = site.postCrawlings | sort: 'date' | reverse -%}
 {%- include header.html scrolly_nav=_crawling -%}
 <!-- Main -->
 <div id="main">
